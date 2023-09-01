@@ -5,7 +5,7 @@
 
 Проект находится в стадии отрисовки и разработки.
 
-Собственный дизайн приложения [Figma](https://www.figma.com/proto/CwEIAxo2quX8nz2Nl1KYrt/Breath-App?page-id=46%3A2291&type=design&node-id=46-2292&viewport=279%2C391%2C0.29&t=bwT82qKmQjTg7LVp-1&scaling=min-zoom&starting-point-node-id=46%3A2392&mode=design)
+Собственный дизайн приложения [Figma](https://www.figma.com/proto/CwEIAxo2quX8nz2Nl1KYrt/Breath-App?page-id=46%3A2291&type=design&node-id=46-2469&viewport=-879%2C405%2C0.5&t=l4lAd8ARNzZZSdPo-1&scaling=min-zoom&starting-point-node-id=46%3A2392&mode=design)
 
 Breath - приложение для людей, страдающих от аллергии на пыльцу:
 - Мониторинг качества воздуха и аллергенов по геолокации
