@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		246000F82A9E22520032551E /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 246000F72A9E22520032551E /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +78,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				247CA37E2AA1FC2D00A3FF46 /* PBXTargetDependency */,
 			);
 			name = UIComponents;
+			packageProductDependencies = (
+				247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */,
+			);
 			productName = UIComponents;
 			productReference = 246000F42A9E22520032551E /* UIComponents.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					246000F32A9E22520032551E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -105,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 246000EA2A9E22520032551E;
+			packageReferences = (
+				247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */,
+			);
 			productRefGroup = 246000F52A9E22520032551E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +143,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		247CA37E2AA1FC2D00A3FF46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 247CA37D2AA1FC2D00A3FF46 /* RswiftGeneratePublicResources */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		246000F92A9E22520032551E /* Debug */ = {
@@ -258,6 +275,7 @@
 		246000FC2A9E22520032551E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -282,6 +300,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +309,7 @@
 		246000FD2A9E22520032551E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -341,6 +361,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		247CA37D2AA1FC2D00A3FF46 /* RswiftGeneratePublicResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGeneratePublicResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 246000EB2A9E22520032551E /* Project object */;
 }
