@@ -10,8 +10,14 @@ import RswiftResources
 
 public final class BAPrimaryButton: UIButton {
 
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
+    let cornerRadius: CGFloat
+    let titleText: String
+
+    public init(cornerRadius: CGFloat = 12, title: String = "Enter") {
+        self.cornerRadius = cornerRadius
+        self.titleText = title
+        super.init(frame: .zero)
+
         setup()
     }
 
@@ -22,8 +28,12 @@ public final class BAPrimaryButton: UIButton {
 
 private extension BAPrimaryButton {
 
-    private func setup() {
+    func setup() {
+        UIFont.registerFonts(from: Bundle.uiComponents)
         backgroundColor = R.color.primaryInteraction()
-        layer.cornerRadius = 12
+        titleLabel?.font = R.font.montBlancTrialBold(size: 18)
+        layer.cornerRadius = cornerRadius
+        setTitle(titleText, for: .normal)
+        setTitleColor(R.color.primaryText(), for: .normal)
     }
 }
