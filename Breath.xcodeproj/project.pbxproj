@@ -53,7 +53,7 @@
 			remoteGlobalIDString = 246000F42A9E22520032551E;
 			remoteInfo = UIComponents;
 		};
-		24F593202AA37DBB009F2A1D /* PBXContainerItemProxy */ = {
+		24F593532AA37EA7009F2A1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */;
 			proxyType = 2;
@@ -203,10 +203,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24F593192AA37DBB009F2A1D /* Products */ = {
+		24F5934C2AA37EA7009F2A1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24F593212AA37DBB009F2A1D /* OnboardSDK.framework */,
+				24F593542AA37EA7009F2A1D /* OnboardSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 					ProjectRef = 246000E12A9E222B0032551E /* Core.xcodeproj */;
 				},
 				{
-					ProductGroup = 24F593192AA37DBB009F2A1D /* Products */;
+					ProductGroup = 24F5934C2AA37EA7009F2A1D /* Products */;
 					ProjectRef = 24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */;
 				},
 				{
@@ -325,11 +325,11 @@
 			remoteRef = 247CA3782AA1F04200A3FF46 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		24F593212AA37DBB009F2A1D /* OnboardSDK.framework */ = {
+		24F593542AA37EA7009F2A1D /* OnboardSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OnboardSDK.framework;
-			remoteRef = 24F593202AA37DBB009F2A1D /* PBXContainerItemProxy */;
+			remoteRef = 24F593532AA37EA7009F2A1D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
