@@ -15,6 +15,15 @@
 		24F592D52AA36ACE009F2A1D /* AuthSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2474725B2AA3587300E8D03B /* AuthSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; };
 		24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24F593672AA3895C009F2A1D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593662AA3895C009F2A1D /* Coordinator.swift */; };
+		24F593692AA389A1009F2A1D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593682AA389A1009F2A1D /* AppCoordinator.swift */; };
+		24F5936D2AA38E74009F2A1D /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5936C2AA38E74009F2A1D /* OnboardingCoordinator.swift */; };
+		24F5937A2AA39A72009F2A1D /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593792AA39A72009F2A1D /* AuthCoordinator.swift */; };
+		24F5937E2AA39F84009F2A1D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5937D2AA39F84009F2A1D /* MainCoordinator.swift */; };
+		24F593802AA39FFE009F2A1D /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5937F2AA39FFE009F2A1D /* HomeTabCoordinator.swift */; };
+		24F593822AA3A00C009F2A1D /* HealthTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593812AA3A00C009F2A1D /* HealthTabCoordinator.swift */; };
+		24F593842AA3A023009F2A1D /* AirTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593832AA3A023009F2A1D /* AirTabCoordinator.swift */; };
+		24F593862AA3A030009F2A1D /* MapTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F593852AA3A030009F2A1D /* MapTabCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +98,15 @@
 		247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthSDK.xcodeproj; path = AuthSDK/AuthSDK.xcodeproj; sourceTree = "<group>"; };
 		24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OnboardSDK.xcodeproj; path = OnboardSDK/OnboardSDK.xcodeproj; sourceTree = "<group>"; };
 		24F593102AA37D19009F2A1D /* OnboardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F593662AA3895C009F2A1D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		24F593682AA389A1009F2A1D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		24F5936C2AA38E74009F2A1D /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		24F593792AA39A72009F2A1D /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		24F5937D2AA39F84009F2A1D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		24F5937F2AA39FFE009F2A1D /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		24F593812AA3A00C009F2A1D /* HealthTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTabCoordinator.swift; sourceTree = "<group>"; };
+		24F593832AA3A023009F2A1D /* AirTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTabCoordinator.swift; sourceTree = "<group>"; };
+		24F593852AA3A030009F2A1D /* MapTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +162,10 @@
 		2460FE542A9DFFE20032551E /* Breath */ = {
 			isa = PBXGroup;
 			children = (
+				24F5935F2AA3893D009F2A1D /* Protocol */,
+				24F593872AA3A99A009F2A1D /* Coordinator */,
 				2460FE6B2A9E00130032551E /* Application */,
+				24F593762AA39398009F2A1D /* Module */,
 				2460FE6A2A9E00050032551E /* Support */,
 			);
 			path = Breath;
@@ -209,6 +230,36 @@
 				24F593542AA37EA7009F2A1D /* OnboardSDK.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		24F5935F2AA3893D009F2A1D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				24F593662AA3895C009F2A1D /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		24F593762AA39398009F2A1D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		24F593872AA3A99A009F2A1D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24F593682AA389A1009F2A1D /* AppCoordinator.swift */,
+				24F5936C2AA38E74009F2A1D /* OnboardingCoordinator.swift */,
+				24F593792AA39A72009F2A1D /* AuthCoordinator.swift */,
+				24F5937D2AA39F84009F2A1D /* MainCoordinator.swift */,
+				24F5937F2AA39FFE009F2A1D /* HomeTabCoordinator.swift */,
+				24F593812AA3A00C009F2A1D /* HealthTabCoordinator.swift */,
+				24F593832AA3A023009F2A1D /* AirTabCoordinator.swift */,
+				24F593852AA3A030009F2A1D /* MapTabCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,8 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F593692AA389A1009F2A1D /* AppCoordinator.swift in Sources */,
+				24F5937E2AA39F84009F2A1D /* MainCoordinator.swift in Sources */,
+				24F593822AA3A00C009F2A1D /* HealthTabCoordinator.swift in Sources */,
+				24F5936D2AA38E74009F2A1D /* OnboardingCoordinator.swift in Sources */,
 				2460FE562A9DFFE20032551E /* AppDelegate.swift in Sources */,
+				24F593842AA3A023009F2A1D /* AirTabCoordinator.swift in Sources */,
+				24F593862AA3A030009F2A1D /* MapTabCoordinator.swift in Sources */,
 				2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */,
+				24F5937A2AA39A72009F2A1D /* AuthCoordinator.swift in Sources */,
+				24F593672AA3895C009F2A1D /* Coordinator.swift in Sources */,
+				24F593802AA39FFE009F2A1D /* HomeTabCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

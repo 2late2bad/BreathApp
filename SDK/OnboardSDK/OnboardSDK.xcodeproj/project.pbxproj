@@ -12,6 +12,7 @@
 		24F593082AA37C99009F2A1D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593062AA37C99009F2A1D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24F5930B2AA37C9C009F2A1D /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F5930A2AA37C9C009F2A1D /* UIComponents.framework */; };
 		24F5930C2AA37C9C009F2A1D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F5930A2AA37C9C009F2A1D /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24F5936F2AA38EF0009F2A1D /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5936E2AA38EF0009F2A1D /* OnboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 		24F592F82AA37C74009F2A1D /* OnboardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardSDK.h; sourceTree = "<group>"; };
 		24F593062AA37C99009F2A1D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F5930A2AA37C9C009F2A1D /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F5936E2AA38EF0009F2A1D /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		24F592F72AA37C74009F2A1D /* OnboardSDK */ = {
 			isa = PBXGroup;
 			children = (
+				24F5936E2AA38EF0009F2A1D /* OnboardView.swift */,
 				24F592F82AA37C74009F2A1D /* OnboardSDK.h */,
 			);
 			path = OnboardSDK;
@@ -128,6 +131,7 @@
 				TargetAttributes = {
 					24F592F42AA37C74009F2A1D = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -167,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F5936F2AA38EF0009F2A1D /* OnboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +308,7 @@
 		24F592FD2AA37C74009F2A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -327,6 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +342,7 @@
 		24F592FE2AA37C74009F2A1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
