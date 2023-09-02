@@ -9,12 +9,48 @@
 /* Begin PBXBuildFile section */
 		246000F82A9E22520032551E /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 246000F72A9E22520032551E /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2474720A2AA3458700E8D03B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 247472092AA3458700E8D03B /* SnapKit */; };
+		247472732AA359ED00E8D03B /* BAAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247472722AA359ED00E8D03B /* BAAssets.xcassets */; };
+		247472862AA35A4600E8D03B /* MontBlancDemoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472752AA35A4600E8D03B /* MontBlancDemoBold.ttf */; };
+		247472872AA35A4600E8D03B /* MontBlanc-Trial-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472762AA35A4600E8D03B /* MontBlanc-Trial-ExtraBold.ttf */; };
+		247472882AA35A4600E8D03B /* MontBlanc-Trial-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472772AA35A4600E8D03B /* MontBlanc-Trial-ExtraLight.ttf */; };
+		247472892AA35A4600E8D03B /* MontBlanc-Trial-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472782AA35A4600E8D03B /* MontBlanc-Trial-Bold.ttf */; };
+		2474728A2AA35A4600E8D03B /* MontBlanc-Trial-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472792AA35A4600E8D03B /* MontBlanc-Trial-ExtraBoldItalic.ttf */; };
+		2474728B2AA35A4600E8D03B /* MontBlanc-Trial-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727A2AA35A4600E8D03B /* MontBlanc-Trial-Black.ttf */; };
+		2474728C2AA35A4600E8D03B /* MontBlanc-Trial-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727B2AA35A4600E8D03B /* MontBlanc-Trial-ThinItalic.ttf */; };
+		2474728D2AA35A4600E8D03B /* MontBlanc-Trial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727C2AA35A4600E8D03B /* MontBlanc-Trial-Regular.ttf */; };
+		2474728E2AA35A4600E8D03B /* MontBlanc-Trial-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727D2AA35A4600E8D03B /* MontBlanc-Trial-RegularItalic.ttf */; };
+		2474728F2AA35A4600E8D03B /* MontBlanc-Trial-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727E2AA35A4600E8D03B /* MontBlanc-Trial-SemiBold.ttf */; };
+		247472902AA35A4600E8D03B /* MontBlanc-Trial-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2474727F2AA35A4600E8D03B /* MontBlanc-Trial-LightItalic.ttf */; };
+		247472912AA35A4600E8D03B /* MontBlanc-Trial-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472802AA35A4600E8D03B /* MontBlanc-Trial-SemiBoldItalic.ttf */; };
+		247472922AA35A4600E8D03B /* MontBlanc-Trial-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472812AA35A4600E8D03B /* MontBlanc-Trial-Light.ttf */; };
+		247472932AA35A4600E8D03B /* MontBlanc-Trial-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472822AA35A4600E8D03B /* MontBlanc-Trial-BlackItalic.ttf */; };
+		247472942AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */; };
+		247472952AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */; };
+		247472962AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */; };
 		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		246000F42A9E22520032551E /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246000F72A9E22520032551E /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
+		247472722AA359ED00E8D03B /* BAAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BAAssets.xcassets; sourceTree = "<group>"; };
+		247472752AA35A4600E8D03B /* MontBlancDemoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MontBlancDemoBold.ttf; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlancDemoBold.ttf"; sourceTree = "<group>"; };
+		247472762AA35A4600E8D03B /* MontBlanc-Trial-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraBold.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraBold.ttf"; sourceTree = "<group>"; };
+		247472772AA35A4600E8D03B /* MontBlanc-Trial-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraLight.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraLight.ttf"; sourceTree = "<group>"; };
+		247472782AA35A4600E8D03B /* MontBlanc-Trial-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Bold.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Bold.ttf"; sourceTree = "<group>"; };
+		247472792AA35A4600E8D03B /* MontBlanc-Trial-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraBoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		2474727A2AA35A4600E8D03B /* MontBlanc-Trial-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Black.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Black.ttf"; sourceTree = "<group>"; };
+		2474727B2AA35A4600E8D03B /* MontBlanc-Trial-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ThinItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ThinItalic.ttf"; sourceTree = "<group>"; };
+		2474727C2AA35A4600E8D03B /* MontBlanc-Trial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Regular.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Regular.ttf"; sourceTree = "<group>"; };
+		2474727D2AA35A4600E8D03B /* MontBlanc-Trial-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-RegularItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-RegularItalic.ttf"; sourceTree = "<group>"; };
+		2474727E2AA35A4600E8D03B /* MontBlanc-Trial-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-SemiBold.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-SemiBold.ttf"; sourceTree = "<group>"; };
+		2474727F2AA35A4600E8D03B /* MontBlanc-Trial-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-LightItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-LightItalic.ttf"; sourceTree = "<group>"; };
+		247472802AA35A4600E8D03B /* MontBlanc-Trial-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-SemiBoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		247472812AA35A4600E8D03B /* MontBlanc-Trial-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Light.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Light.ttf"; sourceTree = "<group>"; };
+		247472822AA35A4600E8D03B /* MontBlanc-Trial-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-BlackItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-BlackItalic.ttf"; sourceTree = "<group>"; };
+		247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Thin.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Thin.ttf"; sourceTree = "<group>"; };
+		247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraLightItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-BoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +85,51 @@
 		246000F62A9E22520032551E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				247472702AA359AF00E8D03B /* Base */,
+				247472712AA359C000E8D03B /* Source */,
 				246000F72A9E22520032551E /* UIComponents.h */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		247472702AA359AF00E8D03B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		247472712AA359C000E8D03B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				247472722AA359ED00E8D03B /* BAAssets.xcassets */,
+				247472742AA359FA00E8D03B /* Fonts */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		247472742AA359FA00E8D03B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2474727A2AA35A4600E8D03B /* MontBlanc-Trial-Black.ttf */,
+				247472822AA35A4600E8D03B /* MontBlanc-Trial-BlackItalic.ttf */,
+				247472782AA35A4600E8D03B /* MontBlanc-Trial-Bold.ttf */,
+				247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */,
+				247472762AA35A4600E8D03B /* MontBlanc-Trial-ExtraBold.ttf */,
+				247472792AA35A4600E8D03B /* MontBlanc-Trial-ExtraBoldItalic.ttf */,
+				247472772AA35A4600E8D03B /* MontBlanc-Trial-ExtraLight.ttf */,
+				247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */,
+				247472812AA35A4600E8D03B /* MontBlanc-Trial-Light.ttf */,
+				2474727F2AA35A4600E8D03B /* MontBlanc-Trial-LightItalic.ttf */,
+				2474727C2AA35A4600E8D03B /* MontBlanc-Trial-Regular.ttf */,
+				2474727D2AA35A4600E8D03B /* MontBlanc-Trial-RegularItalic.ttf */,
+				2474727E2AA35A4600E8D03B /* MontBlanc-Trial-SemiBold.ttf */,
+				247472802AA35A4600E8D03B /* MontBlanc-Trial-SemiBoldItalic.ttf */,
+				247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */,
+				2474727B2AA35A4600E8D03B /* MontBlanc-Trial-ThinItalic.ttf */,
+				247472752AA35A4600E8D03B /* MontBlancDemoBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +213,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2474728A2AA35A4600E8D03B /* MontBlanc-Trial-ExtraBoldItalic.ttf in Resources */,
+				247472912AA35A4600E8D03B /* MontBlanc-Trial-SemiBoldItalic.ttf in Resources */,
+				247472902AA35A4600E8D03B /* MontBlanc-Trial-LightItalic.ttf in Resources */,
+				247472952AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf in Resources */,
+				247472892AA35A4600E8D03B /* MontBlanc-Trial-Bold.ttf in Resources */,
+				247472732AA359ED00E8D03B /* BAAssets.xcassets in Resources */,
+				2474728F2AA35A4600E8D03B /* MontBlanc-Trial-SemiBold.ttf in Resources */,
+				247472962AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf in Resources */,
+				2474728B2AA35A4600E8D03B /* MontBlanc-Trial-Black.ttf in Resources */,
+				247472862AA35A4600E8D03B /* MontBlancDemoBold.ttf in Resources */,
+				247472932AA35A4600E8D03B /* MontBlanc-Trial-BlackItalic.ttf in Resources */,
+				2474728D2AA35A4600E8D03B /* MontBlanc-Trial-Regular.ttf in Resources */,
+				247472882AA35A4600E8D03B /* MontBlanc-Trial-ExtraLight.ttf in Resources */,
+				247472942AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf in Resources */,
+				247472872AA35A4600E8D03B /* MontBlanc-Trial-ExtraBold.ttf in Resources */,
+				247472922AA35A4600E8D03B /* MontBlanc-Trial-Light.ttf in Resources */,
+				2474728C2AA35A4600E8D03B /* MontBlanc-Trial-ThinItalic.ttf in Resources */,
+				2474728E2AA35A4600E8D03B /* MontBlanc-Trial-RegularItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
