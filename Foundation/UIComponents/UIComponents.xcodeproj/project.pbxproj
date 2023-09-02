@@ -28,6 +28,7 @@
 		247472952AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */; };
 		247472962AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */; };
 		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
+		24F5929E2AA35DD6009F2A1D /* BAPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Thin.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Thin.ttf"; sourceTree = "<group>"; };
 		247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraLightItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-BoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
+		24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAPrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		247472702AA359AF00E8D03B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F5929E2AA35DD6009F2A1D /* BAPrimaryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
