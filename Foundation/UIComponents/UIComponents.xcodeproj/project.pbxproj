@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		246000F82A9E22520032551E /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 246000F72A9E22520032551E /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2474720A2AA3458700E8D03B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 247472092AA3458700E8D03B /* SnapKit */; };
 		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */,
+				2474720A2AA3458700E8D03B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 			name = UIComponents;
 			packageProductDependencies = (
 				247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */,
+				247472092AA3458700E8D03B /* SnapKit */,
 			);
 			productName = UIComponents;
 			productReference = 246000F42A9E22520032551E /* UIComponents.framework */;
@@ -114,6 +117,7 @@
 			mainGroup = 246000EA2A9E22520032551E;
 			packageReferences = (
 				247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */,
+				247472082AA3458700E8D03B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 246000F52A9E22520032551E /* Products */;
 			projectDirPath = "";
@@ -363,6 +367,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		247472082AA3458700E8D03B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit?ysclid=lcnbb57v6a449976739";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift";
@@ -374,6 +386,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		247472092AA3458700E8D03B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 247472082AA3458700E8D03B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 247CA37A2AA1FB1600A3FF46 /* XCRemoteSwiftPackageReference "R" */;
