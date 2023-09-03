@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243FE4482AA4C4FA009EE76D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */; };
+		243FE44B2AA4C649009EE76D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE44A2AA4C649009EE76D /* FirebaseAnalytics */; };
+		243FE44D2AA4C649009EE76D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */; };
 		2460FE562A9DFFE20032551E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE552A9DFFE20032551E /* AppDelegate.swift */; };
 		2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE572A9DFFE20032551E /* SceneDelegate.swift */; };
 		2460FE5F2A9DFFE20032551E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2460FE5E2A9DFFE20032551E /* Assets.xcassets */; };
@@ -78,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		246000E12A9E222B0032551E /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		246000FE2A9E22520032551E /* UIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIComponents.xcodeproj; path = UIComponents/UIComponents.xcodeproj; sourceTree = "<group>"; };
 		2460FE522A9DFFE20032551E /* Breath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,8 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243FE44D2AA4C649009EE76D /* FirebaseAnalyticsSwift in Frameworks */,
 				24F592D42AA36ACE009F2A1D /* AuthSDK.framework in Frameworks */,
 				24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */,
+				243FE44B2AA4C649009EE76D /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +150,7 @@
 		2460FE542A9DFFE20032551E /* Breath */ = {
 			isa = PBXGroup;
 			children = (
+				243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */,
 				2460FE6B2A9E00130032551E /* Application */,
 				2460FE6A2A9E00050032551E /* Support */,
 			);
@@ -230,6 +237,8 @@
 			);
 			name = Breath;
 			packageProductDependencies = (
+				243FE44A2AA4C649009EE76D /* FirebaseAnalytics */,
+				243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */,
 			);
 			productName = Breath;
 			productReference = 2460FE522A9DFFE20032551E /* Breath.app */;
@@ -261,6 +270,7 @@
 			mainGroup = 2460FE492A9DFFE20032551E;
 			packageReferences = (
 				247472152AA3491800E8D03B /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 2460FE532A9DFFE20032551E /* Products */;
 			projectDirPath = "";
@@ -341,6 +351,7 @@
 			files = (
 				2460FE622A9DFFE20032551E /* LaunchScreen.storyboard in Resources */,
 				2460FE5F2A9DFFE20032551E /* Assets.xcassets in Resources */,
+				243FE4482AA4C4FA009EE76D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +584,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		247472152AA3491800E8D03B /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint.git";
@@ -584,6 +603,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		243FE44A2AA4C649009EE76D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
 		247472162AA3498D00E8D03B /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 247472152AA3491800E8D03B /* XCRemoteSwiftPackageReference "SwiftLint" */;
