@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AuthSDK
+// import AuthSDK
 
 final class AuthCoordinator: Coordinator {
 

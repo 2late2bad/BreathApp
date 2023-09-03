@@ -19,12 +19,17 @@
 		243FE49D2AA4CA96009EE76D /* MapTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4952AA4CA96009EE76D /* MapTabCoordinator.swift */; };
 		243FE49E2AA4CA96009EE76D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4962AA4CA96009EE76D /* MainCoordinator.swift */; };
 		243FE49F2AA4CA96009EE76D /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */; };
+		243FE4B52AA4CC09009EE76D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE4B42AA4CC09009EE76D /* FirebaseAuth */; };
+		243FE4BA2AA4CF23009EE76D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3742AA1F04200A3FF46 /* Core.framework */; };
+		243FE4BB2AA4CF23009EE76D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3742AA1F04200A3FF46 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		243FE4BC2AA4CF28009EE76D /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; };
+		243FE4BD2AA4CF28009EE76D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		243FE4BF2AA4CF41009EE76D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */; };
 		2460FE562A9DFFE20032551E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE552A9DFFE20032551E /* AppDelegate.swift */; };
 		2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE572A9DFFE20032551E /* SceneDelegate.swift */; };
 		2460FE5F2A9DFFE20032551E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2460FE5E2A9DFFE20032551E /* Assets.xcassets */; };
 		2460FE622A9DFFE20032551E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2460FE602A9DFFE20032551E /* LaunchScreen.storyboard */; };
-		24F592D42AA36ACE009F2A1D /* AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2474725B2AA3587300E8D03B /* AuthSDK.framework */; };
-		24F592D52AA36ACE009F2A1D /* AuthSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2474725B2AA3587300E8D03B /* AuthSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24959CCD2AA514D90089E580 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CCC2AA514D90089E580 /* AuthViewModel.swift */; };
 		24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; };
 		24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -81,7 +86,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				24F592D52AA36ACE009F2A1D /* AuthSDK.framework in Embed Frameworks */,
+				243FE4BB2AA4CF23009EE76D /* Core.framework in Embed Frameworks */,
+				243FE4BD2AA4CF28009EE76D /* UIComponents.framework in Embed Frameworks */,
 				24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -100,6 +106,7 @@
 		243FE4952AA4CA96009EE76D /* MapTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTabCoordinator.swift; sourceTree = "<group>"; };
 		243FE4962AA4CA96009EE76D /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		246000E12A9E222B0032551E /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		246000FE2A9E22520032551E /* UIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIComponents.xcodeproj; path = UIComponents/UIComponents.xcodeproj; sourceTree = "<group>"; };
 		2460FE522A9DFFE20032551E /* Breath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +116,7 @@
 		2460FE612A9DFFE20032551E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2460FE632A9DFFE20032551E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthSDK.xcodeproj; path = AuthSDK/AuthSDK.xcodeproj; sourceTree = "<group>"; };
+		24959CCC2AA514D90089E580 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OnboardSDK.xcodeproj; path = OnboardSDK/OnboardSDK.xcodeproj; sourceTree = "<group>"; };
 		24F593102AA37D19009F2A1D /* OnboardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,7 +127,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				243FE44D2AA4C649009EE76D /* FirebaseAnalyticsSwift in Frameworks */,
-				24F592D42AA36ACE009F2A1D /* AuthSDK.framework in Frameworks */,
+				243FE4BC2AA4CF28009EE76D /* UIComponents.framework in Frameworks */,
+				243FE4BA2AA4CF23009EE76D /* Core.framework in Frameworks */,
+				243FE4B52AA4CC09009EE76D /* FirebaseAuth in Frameworks */,
 				24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */,
 				243FE44B2AA4C649009EE76D /* FirebaseAnalytics in Frameworks */,
 			);
@@ -139,16 +149,23 @@
 		243FE48F2AA4CA96009EE76D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				243FE4902AA4CA96009EE76D /* OnboardingCoordinator.swift */,
 				243FE4912AA4CA96009EE76D /* AppCoordinator.swift */,
+				243FE4902AA4CA96009EE76D /* OnboardingCoordinator.swift */,
 				243FE4922AA4CA96009EE76D /* AuthCoordinator.swift */,
+				243FE4962AA4CA96009EE76D /* MainCoordinator.swift */,
 				243FE4932AA4CA96009EE76D /* HealthTabCoordinator.swift */,
 				243FE4942AA4CA96009EE76D /* AirTabCoordinator.swift */,
 				243FE4952AA4CA96009EE76D /* MapTabCoordinator.swift */,
-				243FE4962AA4CA96009EE76D /* MainCoordinator.swift */,
 				243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		243FE4B62AA4CCD5009EE76D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		246000BA2A9E21F50032551E /* Foundation */ = {
@@ -191,11 +208,14 @@
 		2460FE542A9DFFE20032551E /* Breath */ = {
 			isa = PBXGroup;
 			children = (
+				243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */,
+				24959CCC2AA514D90089E580 /* AuthViewModel.swift */,
 				243FE48C2AA4CA84009EE76D /* Protocol */,
 				243FE48F2AA4CA96009EE76D /* Coordinator */,
-				243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */,
+				243FE4B62AA4CCD5009EE76D /* Auth */,
 				2460FE6B2A9E00130032551E /* Application */,
 				2460FE6A2A9E00050032551E /* Support */,
+				243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */,
 			);
 			path = Breath;
 			sourceTree = "<group>";
@@ -282,6 +302,7 @@
 			packageProductDependencies = (
 				243FE44A2AA4C649009EE76D /* FirebaseAnalytics */,
 				243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */,
+				243FE4B42AA4CC09009EE76D /* FirebaseAuth */,
 			);
 			productName = Breath;
 			productReference = 2460FE522A9DFFE20032551E /* Breath.app */;
@@ -409,12 +430,14 @@
 				243FE49C2AA4CA96009EE76D /* AirTabCoordinator.swift in Sources */,
 				243FE4982AA4CA96009EE76D /* OnboardingCoordinator.swift in Sources */,
 				243FE49E2AA4CA96009EE76D /* MainCoordinator.swift in Sources */,
+				243FE4BF2AA4CF41009EE76D /* AuthViewController.swift in Sources */,
 				243FE49B2AA4CA96009EE76D /* HealthTabCoordinator.swift in Sources */,
 				243FE49F2AA4CA96009EE76D /* HomeTabCoordinator.swift in Sources */,
 				243FE4992AA4CA96009EE76D /* AppCoordinator.swift in Sources */,
 				2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */,
 				243FE49A2AA4CA96009EE76D /* AuthCoordinator.swift in Sources */,
 				243FE49D2AA4CA96009EE76D /* MapTabCoordinator.swift in Sources */,
+				24959CCD2AA514D90089E580 /* AuthViewModel.swift in Sources */,
 				243FE48E2AA4CA84009EE76D /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +687,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsSwift;
+		};
+		243FE4B42AA4CC09009EE76D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 		247472162AA3498D00E8D03B /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;

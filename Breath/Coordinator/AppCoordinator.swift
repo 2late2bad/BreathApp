@@ -25,14 +25,14 @@ final class AppCoordinator: Coordinator {
 //        self.childCoordinators = [onboardingCoordinator]
 //        window.rootViewController = onboardingCoordinator.rootViewController
 
-//        let authCoordinator = AuthCoordinator()
-//        authCoordinator.start()
-//        self.childCoordinators = [authCoordinator]
-//        window.rootViewController = authCoordinator.rootViewController
+        let authCoordinator = AuthCoordinator()
+        authCoordinator.start()
+        self.childCoordinators = [authCoordinator]
+        window.rootViewController = authCoordinator.rootViewController
 
-        let mainCoordinator = MainCoordinator()
-        mainCoordinator.start()
-        self.childCoordinators = [mainCoordinator]
-        self.window.rootViewController = mainCoordinator.rootViewController
+//        let mainCoordinator = MainCoordinator()
+//        mainCoordinator.start()
+//        self.childCoordinators = [mainCoordinator]
+//        self.window.rootViewController = mainCoordinator.rootViewController
     }
 }
