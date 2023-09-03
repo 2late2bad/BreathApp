@@ -15,6 +15,7 @@
 		24F592B82AA36110009F2A1D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F592B62AA36110009F2A1D /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24F592BB2AA36113009F2A1D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F592BA2AA36113009F2A1D /* Core.framework */; };
 		24F592BC2AA36113009F2A1D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F592BA2AA36113009F2A1D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24F5937C2AA39D5F009F2A1D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5937B2AA39D5F009F2A1D /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		2474723B2AA357AB00E8D03B /* AuthSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKTests.swift; sourceTree = "<group>"; };
 		24F592B62AA36110009F2A1D /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F592BA2AA36113009F2A1D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F5937B2AA39D5F009F2A1D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		2474722E2AA357AB00E8D03B /* AuthSDK */ = {
 			isa = PBXGroup;
 			children = (
+				24F5937B2AA39D5F009F2A1D /* AuthViewController.swift */,
 				2474722F2AA357AB00E8D03B /* AuthSDK.h */,
 				247472302AA357AB00E8D03B /* AuthSDK.docc */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F5937C2AA39D5F009F2A1D /* AuthViewController.swift in Sources */,
 				247472312AA357AB00E8D03B /* AuthSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +450,7 @@
 		247472442AA357AB00E8D03B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY95NKW6BH;
@@ -462,6 +467,7 @@
 		247472452AA357AB00E8D03B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY95NKW6BH;
