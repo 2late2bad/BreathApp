@@ -7,6 +7,9 @@
 
 import Foundation
 
-protocol Coordinator {
+typealias CoordinatorHandler = () -> Void
+
+protocol Coordinator: AnyObject {
     func start()
+    var flowCompletionHandler: CoordinatorHandler? { get set }
 }

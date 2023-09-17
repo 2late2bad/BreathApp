@@ -1,3 +1,4 @@
 force_cast: warning # implicitly
 disabled_rules:
 - unused_optional_binding
+- type_name

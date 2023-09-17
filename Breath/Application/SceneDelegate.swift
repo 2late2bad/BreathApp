@@ -16,7 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let appCoordinator = AppCoordinator(window: window)
+        startApp(window: window)
+    }
+
+    func startApp(window: UIWindow) {
+        let coordinatorFactory: CoordinatorFactoryProtocol = CoordinatorFactory(
+            authManager: AuthentificationManager.instance, moduleFactory: ModuleFactory()
+        )
+        let appCoordinator = coordinatorFactory.createAppCoordinator(window: window)
         self.appCoordinator = appCoordinator
         appCoordinator.start()
     }

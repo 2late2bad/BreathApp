@@ -11,6 +11,7 @@ final class MainCoordinator: Coordinator {
 
     var rootViewController: UITabBarController
     var childCoordinators: [Coordinator]
+    var flowCompletionHandler: CoordinatorHandler?
 
     init() {
         childCoordinators = []

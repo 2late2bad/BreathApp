@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		243FE4B82AA4CE08009EE76D /* BATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4B72AA4CE08009EE76D /* BATextField.swift */; };
-		243FE4C12AA4E4C5009EE76D /* BAEyeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4C02AA4E4C5009EE76D /* BAEyeButton.swift */; };
+		24027C282AB0C36C00791DBA /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24027C272AB0C36C00791DBA /* LogoImageView.swift */; };
+		241B343F2AB59D0500795EF6 /* BAPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B343E2AB59D0500795EF6 /* BAPrimaryButton.swift */; };
+		241B34422AB5A2F700795EF6 /* AuthSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B34412AB5A2F700795EF6 /* AuthSwitchView.swift */; };
 		246000F82A9E22520032551E /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 246000F72A9E22520032551E /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2474720A2AA3458700E8D03B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 247472092AA3458700E8D03B /* SnapKit */; };
 		247472732AA359ED00E8D03B /* BAAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247472722AA359ED00E8D03B /* BAAssets.xcassets */; };
@@ -29,19 +30,25 @@
 		247472942AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */; };
 		247472952AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */; };
 		247472962AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */; };
+		247A61302AB0741F0083585D /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A612F2AB0741F0083585D /* UIButton+Ext.swift */; };
+		247A61432AB098250083585D /* AuthLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61422AB098250083585D /* AuthLogoView.swift */; };
+		247A61452AB0988F0083585D /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61442AB0988F0083585D /* BaseImageView.swift */; };
 		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
 		24959CBC2AA4EF460089E580 /* UIDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CBB2AA4EF460089E580 /* UIDependencies.swift */; };
-		24959CBE2AA4F86B0089E580 /* BASubstrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CBD2AA4F86B0089E580 /* BASubstrate.swift */; };
-		24959CC42AA500F30089E580 /* BAAuthSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CC32AA500F30089E580 /* BAAuthSwitchView.swift */; };
-		24959CCA2AA50CD90089E580 /* BAPerfomanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CC92AA50CD90089E580 /* BAPerfomanceView.swift */; };
-		24F5929E2AA35DD6009F2A1D /* BAPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */; };
+		24E0F4D32AB0DCDE00C68717 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D22AB0DCDE00C68717 /* BaseLabel.swift */; };
+		24E0F4D82AB0DDAB00C68717 /* BALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D72AB0DDAB00C68717 /* BALabel.swift */; };
+		24E0F4DA2AB0E0DD00C68717 /* BAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D92AB0E0DD00C68717 /* BAImageView.swift */; };
+		24E0F4DF2AB0E42500C68717 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4DE2AB0E42500C68717 /* BaseTextField.swift */; };
+		24E0F4E22AB0E48F00C68717 /* BATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4E12AB0E48F00C68717 /* BATextField.swift */; };
 		24F592DB2AA37161009F2A1D /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F592DA2AA37161009F2A1D /* UIFont+Ext.swift */; };
 		24F592DF2AA37578009F2A1D /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F592DE2AA37578009F2A1D /* Bundle+Ext.swift */; };
+		24FCAC1A2AB748E5009885F6 /* BAEyeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCAC192AB748E5009885F6 /* BAEyeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		243FE4B72AA4CE08009EE76D /* BATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATextField.swift; sourceTree = "<group>"; };
-		243FE4C02AA4E4C5009EE76D /* BAEyeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAEyeButton.swift; sourceTree = "<group>"; };
+		24027C272AB0C36C00791DBA /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		241B343E2AB59D0500795EF6 /* BAPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAPrimaryButton.swift; sourceTree = "<group>"; };
+		241B34412AB5A2F700795EF6 /* AuthSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSwitchView.swift; sourceTree = "<group>"; };
 		246000F42A9E22520032551E /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246000F72A9E22520032551E /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		247472722AA359ED00E8D03B /* BAAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BAAssets.xcassets; sourceTree = "<group>"; };
@@ -62,13 +69,18 @@
 		247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Thin.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Thin.ttf"; sourceTree = "<group>"; };
 		247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraLightItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-BoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
+		247A612F2AB0741F0083585D /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		247A61422AB098250083585D /* AuthLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLogoView.swift; sourceTree = "<group>"; };
+		247A61442AB0988F0083585D /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 		24959CBB2AA4EF460089E580 /* UIDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDependencies.swift; sourceTree = "<group>"; };
-		24959CBD2AA4F86B0089E580 /* BASubstrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASubstrate.swift; sourceTree = "<group>"; };
-		24959CC32AA500F30089E580 /* BAAuthSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAAuthSwitchView.swift; sourceTree = "<group>"; };
-		24959CC92AA50CD90089E580 /* BAPerfomanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAPerfomanceView.swift; sourceTree = "<group>"; };
-		24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAPrimaryButton.swift; sourceTree = "<group>"; };
+		24E0F4D22AB0DCDE00C68717 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		24E0F4D72AB0DDAB00C68717 /* BALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BALabel.swift; sourceTree = "<group>"; };
+		24E0F4D92AB0E0DD00C68717 /* BAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAImageView.swift; sourceTree = "<group>"; };
+		24E0F4DE2AB0E42500C68717 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		24E0F4E12AB0E48F00C68717 /* BATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATextField.swift; sourceTree = "<group>"; };
 		24F592DA2AA37161009F2A1D /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		24F592DE2AA37578009F2A1D /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		24FCAC192AB748E5009885F6 /* BAEyeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAEyeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 			children = (
 				24959CBB2AA4EF460089E580 /* UIDependencies.swift */,
 				247472702AA359AF00E8D03B /* Base */,
+				24E0F4D62AB0DD7B00C68717 /* BreathAppUI */,
 				24959CC72AA5036D0089E580 /* AuthUI */,
 				24F592D92AA37133009F2A1D /* Extensions */,
 				247472712AA359C000E8D03B /* Source */,
@@ -116,10 +129,9 @@
 		247472702AA359AF00E8D03B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				24F5929D2AA35DD6009F2A1D /* BAPrimaryButton.swift */,
-				243FE4C02AA4E4C5009EE76D /* BAEyeButton.swift */,
-				243FE4B72AA4CE08009EE76D /* BATextField.swift */,
-				24959CBD2AA4F86B0089E580 /* BASubstrate.swift */,
+				247A61442AB0988F0083585D /* BaseImageView.swift */,
+				24E0F4D22AB0DCDE00C68717 /* BaseLabel.swift */,
+				24E0F4DE2AB0E42500C68717 /* BaseTextField.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -160,10 +172,31 @@
 		24959CC72AA5036D0089E580 /* AuthUI */ = {
 			isa = PBXGroup;
 			children = (
-				24959CC92AA50CD90089E580 /* BAPerfomanceView.swift */,
-				24959CC32AA500F30089E580 /* BAAuthSwitchView.swift */,
+				24E0F4DC2AB0E35300C68717 /* Subview */,
+				247A61422AB098250083585D /* AuthLogoView.swift */,
+				241B34412AB5A2F700795EF6 /* AuthSwitchView.swift */,
 			);
 			path = AuthUI;
+			sourceTree = "<group>";
+		};
+		24E0F4D62AB0DD7B00C68717 /* BreathAppUI */ = {
+			isa = PBXGroup;
+			children = (
+				24E0F4D72AB0DDAB00C68717 /* BALabel.swift */,
+				24E0F4D92AB0E0DD00C68717 /* BAImageView.swift */,
+				24E0F4E12AB0E48F00C68717 /* BATextField.swift */,
+				241B343E2AB59D0500795EF6 /* BAPrimaryButton.swift */,
+				24FCAC192AB748E5009885F6 /* BAEyeButton.swift */,
+			);
+			path = BreathAppUI;
+			sourceTree = "<group>";
+		};
+		24E0F4DC2AB0E35300C68717 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				24027C272AB0C36C00791DBA /* LogoImageView.swift */,
+			);
+			path = Subview;
 			sourceTree = "<group>";
 		};
 		24F592D92AA37133009F2A1D /* Extensions */ = {
@@ -171,6 +204,7 @@
 			children = (
 				24F592DA2AA37161009F2A1D /* UIFont+Ext.swift */,
 				24F592DE2AA37578009F2A1D /* Bundle+Ext.swift */,
+				247A612F2AB0741F0083585D /* UIButton+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,15 +318,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243FE4C12AA4E4C5009EE76D /* BAEyeButton.swift in Sources */,
+				24FCAC1A2AB748E5009885F6 /* BAEyeButton.swift in Sources */,
+				241B34422AB5A2F700795EF6 /* AuthSwitchView.swift in Sources */,
+				24027C282AB0C36C00791DBA /* LogoImageView.swift in Sources */,
+				24E0F4D82AB0DDAB00C68717 /* BALabel.swift in Sources */,
 				24959CBC2AA4EF460089E580 /* UIDependencies.swift in Sources */,
-				243FE4B82AA4CE08009EE76D /* BATextField.swift in Sources */,
+				24E0F4DF2AB0E42500C68717 /* BaseTextField.swift in Sources */,
+				24E0F4D32AB0DCDE00C68717 /* BaseLabel.swift in Sources */,
 				24F592DF2AA37578009F2A1D /* Bundle+Ext.swift in Sources */,
+				24E0F4DA2AB0E0DD00C68717 /* BAImageView.swift in Sources */,
 				24F592DB2AA37161009F2A1D /* UIFont+Ext.swift in Sources */,
-				24959CC42AA500F30089E580 /* BAAuthSwitchView.swift in Sources */,
-				24F5929E2AA35DD6009F2A1D /* BAPrimaryButton.swift in Sources */,
-				24959CBE2AA4F86B0089E580 /* BASubstrate.swift in Sources */,
-				24959CCA2AA50CD90089E580 /* BAPerfomanceView.swift in Sources */,
+				241B343F2AB59D0500795EF6 /* BAPrimaryButton.swift in Sources */,
+				247A61432AB098250083585D /* AuthLogoView.swift in Sources */,
+				24E0F4E22AB0E48F00C68717 /* BATextField.swift in Sources */,
+				247A61302AB0741F0083585D /* UIButton+Ext.swift in Sources */,
+				247A61452AB0988F0083585D /* BaseImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

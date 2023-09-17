@@ -10,6 +10,7 @@ import UIKit
 final class MapTabCoordinator: Coordinator {
 
     var rootViewController: UINavigationController
+    var flowCompletionHandler: CoordinatorHandler?
 
     init() {
         rootViewController = UINavigationController()

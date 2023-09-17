@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240C1B512AB6F08E006EC9C4 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; };
+		240C1B522AB6F08E006EC9C4 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		240C1B552AB702B3006EC9C4 /* Authentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C1B542AB702B3006EC9C4 /* Authentification.swift */; };
+		240C1B572AB73F33006EC9C4 /* UIScreen+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C1B562AB73F33006EC9C4 /* UIScreen+Ext.swift */; };
+		241B34462AB5AA4700795EF6 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B34452AB5AA4700795EF6 /* ModuleFactory.swift */; };
+		241B344A2AB5AC2400795EF6 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B34492AB5AC2400795EF6 /* FlowController.swift */; };
+		241B344C2AB5AFBF00795EF6 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B344B2AB5AFBF00795EF6 /* CoordinatorFactory.swift */; };
 		243FE4482AA4C4FA009EE76D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */; };
-		243FE44B2AA4C649009EE76D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE44A2AA4C649009EE76D /* FirebaseAnalytics */; };
-		243FE44D2AA4C649009EE76D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */; };
 		243FE48E2AA4CA84009EE76D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE48D2AA4CA84009EE76D /* Coordinator.swift */; };
 		243FE4982AA4CA96009EE76D /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4902AA4CA96009EE76D /* OnboardingCoordinator.swift */; };
 		243FE4992AA4CA96009EE76D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4912AA4CA96009EE76D /* AppCoordinator.swift */; };
@@ -22,33 +27,25 @@
 		243FE4B52AA4CC09009EE76D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 243FE4B42AA4CC09009EE76D /* FirebaseAuth */; };
 		243FE4BA2AA4CF23009EE76D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3742AA1F04200A3FF46 /* Core.framework */; };
 		243FE4BB2AA4CF23009EE76D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3742AA1F04200A3FF46 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		243FE4BC2AA4CF28009EE76D /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; };
-		243FE4BD2AA4CF28009EE76D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		243FE4BF2AA4CF41009EE76D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */; };
+		2443A6DB2AB6E9C000C2F8DF /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A6DA2AB6E9C000C2F8DF /* UITextField+Ext.swift */; };
+		2443A6DD2AB6EB8500C2F8DF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A6DC2AB6EB8500C2F8DF /* String+Ext.swift */; };
+		2443A6E02AB6ED6800C2F8DF /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A6DE2AB6ECB800C2F8DF /* AuthController.swift */; };
+		245D1B7C2AB61481000F9E52 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 245D1B7B2AB61481000F9E52 /* FirebaseFirestore */; };
+		245D1B7E2AB61491000F9E52 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 245D1B7D2AB61491000F9E52 /* FirebaseFirestoreSwift */; };
+		245D1B802AB614B1000F9E52 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 245D1B7F2AB614B1000F9E52 /* FirebaseStorage */; };
+		245D1B892AB61B2A000F9E52 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D1B882AB61B2A000F9E52 /* UserModel.swift */; };
 		2460FE562A9DFFE20032551E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE552A9DFFE20032551E /* AppDelegate.swift */; };
 		2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460FE572A9DFFE20032551E /* SceneDelegate.swift */; };
 		2460FE5F2A9DFFE20032551E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2460FE5E2A9DFFE20032551E /* Assets.xcassets */; };
 		2460FE622A9DFFE20032551E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2460FE602A9DFFE20032551E /* LaunchScreen.storyboard */; };
+		247A61332AB076910083585D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61322AB076910083585D /* UIView+Ext.swift */; };
 		24959CCD2AA514D90089E580 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CCC2AA514D90089E580 /* AuthViewModel.swift */; };
+		24A2D4E62AB6299B00D301C2 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A2D4E52AB6299B00D301C2 /* AuthentificationManager.swift */; };
 		24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; };
 		24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2474725A2AA3587300E8D03B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2474722C2AA357AB00E8D03B;
-			remoteInfo = AuthSDK;
-		};
-		2474725C2AA3587300E8D03B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 247472362AA357AB00E8D03B;
-			remoteInfo = AuthSDKTests;
-		};
 		247CA3732AA1F04200A3FF46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 246000E12A9E222B0032551E /* Core.xcodeproj */;
@@ -87,7 +84,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				243FE4BB2AA4CF23009EE76D /* Core.framework in Embed Frameworks */,
-				243FE4BD2AA4CF28009EE76D /* UIComponents.framework in Embed Frameworks */,
+				240C1B522AB6F08E006EC9C4 /* UIComponents.framework in Embed Frameworks */,
 				24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -96,6 +93,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		240C1B542AB702B3006EC9C4 /* Authentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentification.swift; sourceTree = "<group>"; };
+		240C1B562AB73F33006EC9C4 /* UIScreen+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Ext.swift"; sourceTree = "<group>"; };
+		241B34452AB5AA4700795EF6 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		241B34492AB5AC2400795EF6 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		241B344B2AB5AFBF00795EF6 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		243FE48D2AA4CA84009EE76D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		243FE4902AA4CA96009EE76D /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
@@ -106,7 +108,10 @@
 		243FE4952AA4CA96009EE76D /* MapTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTabCoordinator.swift; sourceTree = "<group>"; };
 		243FE4962AA4CA96009EE76D /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
-		243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		2443A6DA2AB6E9C000C2F8DF /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		2443A6DC2AB6EB8500C2F8DF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		2443A6DE2AB6ECB800C2F8DF /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		245D1B882AB61B2A000F9E52 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		246000E12A9E222B0032551E /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		246000FE2A9E22520032551E /* UIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIComponents.xcodeproj; path = UIComponents/UIComponents.xcodeproj; sourceTree = "<group>"; };
 		2460FE522A9DFFE20032551E /* Breath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +120,9 @@
 		2460FE5E2A9DFFE20032551E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2460FE612A9DFFE20032551E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2460FE632A9DFFE20032551E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AuthSDK.xcodeproj; path = AuthSDK/AuthSDK.xcodeproj; sourceTree = "<group>"; };
+		247A61322AB076910083585D /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		24959CCC2AA514D90089E580 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		24A2D4E52AB6299B00D301C2 /* AuthentificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationManager.swift; sourceTree = "<group>"; };
 		24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OnboardSDK.xcodeproj; path = OnboardSDK/OnboardSDK.xcodeproj; sourceTree = "<group>"; };
 		24F593102AA37D19009F2A1D /* OnboardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,22 +132,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243FE44D2AA4C649009EE76D /* FirebaseAnalyticsSwift in Frameworks */,
-				243FE4BC2AA4CF28009EE76D /* UIComponents.framework in Frameworks */,
 				243FE4BA2AA4CF23009EE76D /* Core.framework in Frameworks */,
+				240C1B512AB6F08E006EC9C4 /* UIComponents.framework in Frameworks */,
 				243FE4B52AA4CC09009EE76D /* FirebaseAuth in Frameworks */,
 				24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */,
-				243FE44B2AA4C649009EE76D /* FirebaseAnalytics in Frameworks */,
+				245D1B802AB614B1000F9E52 /* FirebaseStorage in Frameworks */,
+				245D1B7C2AB61481000F9E52 /* FirebaseFirestore in Frameworks */,
+				245D1B7E2AB61491000F9E52 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241B34442AB5AA2100795EF6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				241B344B2AB5AFBF00795EF6 /* CoordinatorFactory.swift */,
+				241B34452AB5AA4700795EF6 /* ModuleFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		243FE48C2AA4CA84009EE76D /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				243FE48D2AA4CA84009EE76D /* Coordinator.swift */,
+				241B34492AB5AC2400795EF6 /* FlowController.swift */,
+				240C1B542AB702B3006EC9C4 /* Authentification.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -153,19 +171,73 @@
 				243FE4902AA4CA96009EE76D /* OnboardingCoordinator.swift */,
 				243FE4922AA4CA96009EE76D /* AuthCoordinator.swift */,
 				243FE4962AA4CA96009EE76D /* MainCoordinator.swift */,
+				243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */,
 				243FE4932AA4CA96009EE76D /* HealthTabCoordinator.swift */,
 				243FE4942AA4CA96009EE76D /* AirTabCoordinator.swift */,
 				243FE4952AA4CA96009EE76D /* MapTabCoordinator.swift */,
-				243FE4972AA4CA96009EE76D /* HomeTabCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		243FE4B62AA4CCD5009EE76D /* Auth */ = {
+		2443A6D92AB6E9A800C2F8DF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				247A61322AB076910083585D /* UIView+Ext.swift */,
+				2443A6DA2AB6E9C000C2F8DF /* UITextField+Ext.swift */,
+				2443A6DC2AB6EB8500C2F8DF /* String+Ext.swift */,
+				240C1B562AB73F33006EC9C4 /* UIScreen+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		245D1B692AB5FB7C000F9E52 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				245D1B6A2AB5FB81000F9E52 /* Auth */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		245D1B6A2AB5FB81000F9E52 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				245D1B832AB619D4000F9E52 /* Model */,
+				245D1B842AB619D9000F9E52 /* View */,
+				245D1B852AB619E4000F9E52 /* ViewModel */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		245D1B762AB60033000F9E52 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				24A2D4E52AB6299B00D301C2 /* AuthentificationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		245D1B832AB619D4000F9E52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				245D1B882AB61B2A000F9E52 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		245D1B842AB619D9000F9E52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2443A6DE2AB6ECB800C2F8DF /* AuthController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		245D1B852AB619E4000F9E52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24959CCC2AA514D90089E580 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		246000BA2A9E21F50032551E /* Foundation */ = {
@@ -181,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				24F592FF2AA37C74009F2A1D /* OnboardSDK.xcodeproj */,
-				247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -208,12 +279,13 @@
 		2460FE542A9DFFE20032551E /* Breath */ = {
 			isa = PBXGroup;
 			children = (
-				243FE4BE2AA4CF41009EE76D /* AuthViewController.swift */,
-				24959CCC2AA514D90089E580 /* AuthViewModel.swift */,
-				243FE48C2AA4CA84009EE76D /* Protocol */,
-				243FE48F2AA4CA96009EE76D /* Coordinator */,
-				243FE4B62AA4CCD5009EE76D /* Auth */,
 				2460FE6B2A9E00130032551E /* Application */,
+				245D1B692AB5FB7C000F9E52 /* Flow */,
+				243FE48C2AA4CA84009EE76D /* Protocol */,
+				241B34442AB5AA2100795EF6 /* Factory */,
+				243FE48F2AA4CA96009EE76D /* Coordinator */,
+				245D1B762AB60033000F9E52 /* Manager */,
+				2443A6D92AB6E9A800C2F8DF /* Extension */,
 				2460FE6A2A9E00050032551E /* Support */,
 				243FE4412AA4C4FA009EE76D /* GoogleService-Info.plist */,
 			);
@@ -237,15 +309,6 @@
 				2460FE572A9DFFE20032551E /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		247472562AA3587300E8D03B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2474725B2AA3587300E8D03B /* AuthSDK.framework */,
-				2474725D2AA3587300E8D03B /* AuthSDKTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		247CA36D2AA1F04200A3FF46 /* Products */ = {
@@ -300,9 +363,10 @@
 			);
 			name = Breath;
 			packageProductDependencies = (
-				243FE44A2AA4C649009EE76D /* FirebaseAnalytics */,
-				243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */,
 				243FE4B42AA4CC09009EE76D /* FirebaseAuth */,
+				245D1B7B2AB61481000F9E52 /* FirebaseFirestore */,
+				245D1B7D2AB61491000F9E52 /* FirebaseFirestoreSwift */,
+				245D1B7F2AB614B1000F9E52 /* FirebaseStorage */,
 			);
 			productName = Breath;
 			productReference = 2460FE522A9DFFE20032551E /* Breath.app */;
@@ -340,10 +404,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 247472562AA3587300E8D03B /* Products */;
-					ProjectRef = 247472462AA357AB00E8D03B /* AuthSDK.xcodeproj */;
-				},
-				{
 					ProductGroup = 247CA36D2AA1F04200A3FF46 /* Products */;
 					ProjectRef = 246000E12A9E222B0032551E /* Core.xcodeproj */;
 				},
@@ -364,20 +424,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2474725B2AA3587300E8D03B /* AuthSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AuthSDK.framework;
-			remoteRef = 2474725A2AA3587300E8D03B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2474725D2AA3587300E8D03B /* AuthSDKTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AuthSDKTests.xctest;
-			remoteRef = 2474725C2AA3587300E8D03B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		247CA3742AA1F04200A3FF46 /* Core.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -430,11 +476,21 @@
 				243FE49C2AA4CA96009EE76D /* AirTabCoordinator.swift in Sources */,
 				243FE4982AA4CA96009EE76D /* OnboardingCoordinator.swift in Sources */,
 				243FE49E2AA4CA96009EE76D /* MainCoordinator.swift in Sources */,
-				243FE4BF2AA4CF41009EE76D /* AuthViewController.swift in Sources */,
+				247A61332AB076910083585D /* UIView+Ext.swift in Sources */,
+				245D1B892AB61B2A000F9E52 /* UserModel.swift in Sources */,
+				241B344C2AB5AFBF00795EF6 /* CoordinatorFactory.swift in Sources */,
+				24A2D4E62AB6299B00D301C2 /* AuthentificationManager.swift in Sources */,
 				243FE49B2AA4CA96009EE76D /* HealthTabCoordinator.swift in Sources */,
 				243FE49F2AA4CA96009EE76D /* HomeTabCoordinator.swift in Sources */,
+				240C1B572AB73F33006EC9C4 /* UIScreen+Ext.swift in Sources */,
+				2443A6E02AB6ED6800C2F8DF /* AuthController.swift in Sources */,
+				240C1B552AB702B3006EC9C4 /* Authentification.swift in Sources */,
+				241B34462AB5AA4700795EF6 /* ModuleFactory.swift in Sources */,
+				241B344A2AB5AC2400795EF6 /* FlowController.swift in Sources */,
 				243FE4992AA4CA96009EE76D /* AppCoordinator.swift in Sources */,
+				2443A6DD2AB6EB8500C2F8DF /* String+Ext.swift in Sources */,
 				2460FE582A9DFFE20032551E /* SceneDelegate.swift in Sources */,
+				2443A6DB2AB6E9C000C2F8DF /* UITextField+Ext.swift in Sources */,
 				243FE49A2AA4CA96009EE76D /* AuthCoordinator.swift in Sources */,
 				243FE49D2AA4CA96009EE76D /* MapTabCoordinator.swift in Sources */,
 				24959CCD2AA514D90089E580 /* AuthViewModel.swift in Sources */,
@@ -678,20 +734,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		243FE44A2AA4C649009EE76D /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		243FE44C2AA4C649009EE76D /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
 		243FE4B42AA4CC09009EE76D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		245D1B7B2AB61481000F9E52 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		245D1B7D2AB61491000F9E52 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		245D1B7F2AB614B1000F9E52 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		247472162AA3498D00E8D03B /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;

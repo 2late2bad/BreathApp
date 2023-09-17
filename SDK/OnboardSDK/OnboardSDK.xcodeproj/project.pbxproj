@@ -8,27 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		24F592F92AA37C74009F2A1D /* OnboardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F592F82AA37C74009F2A1D /* OnboardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24F593072AA37C99009F2A1D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593062AA37C99009F2A1D /* Core.framework */; };
-		24F593082AA37C99009F2A1D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593062AA37C99009F2A1D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		24F5930B2AA37C9C009F2A1D /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F5930A2AA37C9C009F2A1D /* UIComponents.framework */; };
-		24F5930C2AA37C9C009F2A1D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F5930A2AA37C9C009F2A1D /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24F5936F2AA38EF0009F2A1D /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5936E2AA38EF0009F2A1D /* OnboardView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		24F593092AA37C99009F2A1D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				24F5930C2AA37C9C009F2A1D /* UIComponents.framework in Embed Frameworks */,
-				24F593082AA37C99009F2A1D /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24F592F52AA37C74009F2A1D /* OnboardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnboardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +24,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24F5930B2AA37C9C009F2A1D /* UIComponents.framework in Frameworks */,
-				24F593072AA37C99009F2A1D /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +87,10 @@
 				24F592F12AA37C74009F2A1D /* Sources */,
 				24F592F22AA37C74009F2A1D /* Frameworks */,
 				24F592F32AA37C74009F2A1D /* Resources */,
-				24F593092AA37C99009F2A1D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24F5930F2AA37CBD009F2A1D /* PBXTargetDependency */,
 			);
 			name = OnboardSDK;
 			productName = OnboardSDK;
@@ -176,13 +153,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24F5930F2AA37CBD009F2A1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 24F5930E2AA37CBD009F2A1D /* SwiftLintPlugin */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		24F592FA2AA37C74009F2A1D /* Debug */ = {
@@ -405,14 +375,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		24F5930E2AA37CBD009F2A1D /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 24F5930D2AA37CB1009F2A1D /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24F592EC2AA37C74009F2A1D /* Project object */;
 }

@@ -12,6 +12,7 @@ import OnboardSDK
 final class OnboardingCoordinator: Coordinator {
 
     var rootViewController: UIViewController
+    var flowCompletionHandler: CoordinatorHandler?
 
     init() {
         rootViewController = UIViewController()

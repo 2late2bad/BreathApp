@@ -2,7 +2,7 @@
 //  BAEyeButton.swift
 //  UIComponents
 //
-//  Created by Alexander V. on 03.09.2023.
+//  Created by Alexander V. on 17.09.2023.
 //
 
 import UIKit

@@ -10,6 +10,7 @@ import UIKit
 final class AirTabCoordinator: Coordinator {
 
     var rootViewController: UINavigationController
+    var flowCompletionHandler: CoordinatorHandler?
 
     init() {
         rootViewController = UINavigationController()

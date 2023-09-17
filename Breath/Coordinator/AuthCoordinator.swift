@@ -6,18 +6,31 @@
 //
 
 import UIKit
-// import AuthSDK
+import SwiftUI
 
 final class AuthCoordinator: Coordinator {
 
-    var rootViewController = UIViewController()
+    var rootViewController: UINavigationController
+    private let authManager: Authentification
+    private let moduleFactory: ModuleFactoryProtocol
+    var flowCompletionHandler: CoordinatorHandler?
 
-    lazy var authViewController: AuthViewController = {
-        let authVC = AuthViewController()
-        return authVC
-    }()
+    init(navController: UINavigationController, authManager: Authentification, moduleFactory: ModuleFactoryProtocol) {
+        rootViewController = navController
+        self.authManager = authManager
+        self.moduleFactory = moduleFactory
+    }
 
     func start() {
-        rootViewController = authViewController
+        showAuthModule()
+    }
+
+    private func showAuthModule() {
+        let controller = moduleFactory.createAuthModule(authManager: authManager)
+        controller.completionHandler = { [weak self] _ in
+            guard let self else { return }
+            self.flowCompletionHandler?()
+        }
+        rootViewController.setViewControllers([controller], animated: false)
     }
 }
