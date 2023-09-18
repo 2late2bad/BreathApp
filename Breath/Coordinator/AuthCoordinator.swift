@@ -15,8 +15,8 @@ final class AuthCoordinator: Coordinator {
     private let moduleFactory: ModuleFactoryProtocol
     var flowCompletionHandler: CoordinatorHandler?
 
-    init(navController: UINavigationController, authManager: Authentification, moduleFactory: ModuleFactoryProtocol) {
-        rootViewController = navController
+    init(authManager: Authentification, moduleFactory: ModuleFactoryProtocol) {
+        rootViewController = UINavigationController()
         self.authManager = authManager
         self.moduleFactory = moduleFactory
     }

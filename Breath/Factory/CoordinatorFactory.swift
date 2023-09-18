@@ -29,6 +29,6 @@ final class CoordinatorFactory: CoordinatorFactoryProtocol {
     }
 
     func createAuthCoordinator() -> AuthCoordinator {
-        AuthCoordinator(navController: UINavigationController(), authManager: authManager, moduleFactory: moduleFactory)
+        AuthCoordinator(authManager: authManager, moduleFactory: moduleFactory)
     }
 }
