@@ -30,11 +30,11 @@
 		247472942AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */; };
 		247472952AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */; };
 		247472962AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */; };
+		24773FE52AC42F780027E43E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FE42AC42F780027E43E /* Dependencies.swift */; };
 		247A61302AB0741F0083585D /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A612F2AB0741F0083585D /* UIButton+Ext.swift */; };
 		247A61432AB098250083585D /* AuthLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61422AB098250083585D /* AuthLogoView.swift */; };
 		247A61452AB0988F0083585D /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61442AB0988F0083585D /* BaseImageView.swift */; };
 		247CA37C2AA1FB1600A3FF46 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 247CA37B2AA1FB1600A3FF46 /* RswiftLibrary */; };
-		24959CBC2AA4EF460089E580 /* UIDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CBB2AA4EF460089E580 /* UIDependencies.swift */; };
 		24E0F4D32AB0DCDE00C68717 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D22AB0DCDE00C68717 /* BaseLabel.swift */; };
 		24E0F4D82AB0DDAB00C68717 /* BALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D72AB0DDAB00C68717 /* BALabel.swift */; };
 		24E0F4DA2AB0E0DD00C68717 /* BAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F4D92AB0E0DD00C68717 /* BAImageView.swift */; };
@@ -69,10 +69,10 @@
 		247472832AA35A4600E8D03B /* MontBlanc-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-Thin.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-Thin.ttf"; sourceTree = "<group>"; };
 		247472842AA35A4600E8D03B /* MontBlanc-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-ExtraLightItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		247472852AA35A4600E8D03B /* MontBlanc-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontBlanc-Trial-BoldItalic.ttf"; path = "../../../../../../../../Downloads/Mont Blanc-Trial/MontBlanc-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
+		24773FE42AC42F780027E43E /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		247A612F2AB0741F0083585D /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		247A61422AB098250083585D /* AuthLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLogoView.swift; sourceTree = "<group>"; };
 		247A61442AB0988F0083585D /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
-		24959CBB2AA4EF460089E580 /* UIDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDependencies.swift; sourceTree = "<group>"; };
 		24E0F4D22AB0DCDE00C68717 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		24E0F4D72AB0DDAB00C68717 /* BALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BALabel.swift; sourceTree = "<group>"; };
 		24E0F4D92AB0E0DD00C68717 /* BAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAImageView.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		246000F62A9E22520032551E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				24959CBB2AA4EF460089E580 /* UIDependencies.swift */,
+				24773FE32AC42ECB0027E43E /* Dependencies */,
 				247472702AA359AF00E8D03B /* Base */,
 				24E0F4D62AB0DD7B00C68717 /* BreathAppUI */,
 				24959CC72AA5036D0089E580 /* AuthUI */,
@@ -167,6 +167,14 @@
 				247472752AA35A4600E8D03B /* MontBlancDemoBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		24773FE32AC42ECB0027E43E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				24773FE42AC42F780027E43E /* Dependencies.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		24959CC72AA5036D0089E580 /* AuthUI */ = {
@@ -322,7 +330,7 @@
 				241B34422AB5A2F700795EF6 /* AuthSwitchView.swift in Sources */,
 				24027C282AB0C36C00791DBA /* LogoImageView.swift in Sources */,
 				24E0F4D82AB0DDAB00C68717 /* BALabel.swift in Sources */,
-				24959CBC2AA4EF460089E580 /* UIDependencies.swift in Sources */,
+				24773FE52AC42F780027E43E /* Dependencies.swift in Sources */,
 				24E0F4DF2AB0E42500C68717 /* BaseTextField.swift in Sources */,
 				24E0F4D32AB0DCDE00C68717 /* BaseLabel.swift in Sources */,
 				24F592DF2AA37578009F2A1D /* Bundle+Ext.swift in Sources */,
