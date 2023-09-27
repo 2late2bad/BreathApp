@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UIDependencies.shared.registerFonts()
+        CoreFramework.setup()
+        UIComponentsFramework.setup()
         FirebaseApp.configure()
         return true
     }

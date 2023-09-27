@@ -11,6 +11,11 @@
 		246000D22A9E222B0032551E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246000C72A9E222B0032551E /* Core.framework */; };
 		246000D72A9E222B0032551E /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246000D62A9E222B0032551E /* CoreTests.swift */; };
 		246000D82A9E222B0032551E /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 246000CA2A9E222B0032551E /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24773FCE2AC421AA0027E43E /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FCD2AC421AA0027E43E /* Injected.swift */; };
+		24773FD02AC421B40027E43E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FCF2AC421B40027E43E /* Dependencies.swift */; };
+		24773FD42AC421F70027E43E /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FD32AC421F70027E43E /* ServiceLocator.swift */; };
+		24773FD72AC422910027E43E /* UDStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FD62AC422910027E43E /* UDStorageManager.swift */; };
+		24773FD92AC422BF0027E43E /* UDStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FD82AC422BF0027E43E /* UDStorageKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		246000CB2A9E222B0032551E /* Core.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Core.docc; sourceTree = "<group>"; };
 		246000D12A9E222B0032551E /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		246000D62A9E222B0032551E /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
+		24773FCD2AC421AA0027E43E /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		24773FCF2AC421B40027E43E /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		24773FD32AC421F70027E43E /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		24773FD62AC422910027E43E /* UDStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDStorageManager.swift; sourceTree = "<group>"; };
+		24773FD82AC422BF0027E43E /* UDStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDStorageKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		246000C92A9E222B0032551E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				24773FCC2AC421950027E43E /* Dependencies */,
+				24773FD22AC421E30027E43E /* ServiceLocator */,
+				24773FD12AC421D20027E43E /* Storage */,
 				246000CA2A9E222B0032551E /* Core.h */,
 				246000CB2A9E222B0032551E /* Core.docc */,
 			);
@@ -83,6 +96,40 @@
 				246000D62A9E222B0032551E /* CoreTests.swift */,
 			);
 			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		24773FCC2AC421950027E43E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				24773FCD2AC421AA0027E43E /* Injected.swift */,
+				24773FCF2AC421B40027E43E /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		24773FD12AC421D20027E43E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				24773FD52AC422650027E43E /* UserDefaults */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		24773FD22AC421E30027E43E /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				24773FD32AC421F70027E43E /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		24773FD52AC422650027E43E /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				24773FD82AC422BF0027E43E /* UDStorageKeys.swift */,
+				24773FD62AC422910027E43E /* UDStorageManager.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24773FD02AC421B40027E43E /* Dependencies.swift in Sources */,
+				24773FD42AC421F70027E43E /* ServiceLocator.swift in Sources */,
+				24773FD92AC422BF0027E43E /* UDStorageKeys.swift in Sources */,
 				246000CC2A9E222B0032551E /* Core.docc in Sources */,
+				24773FD72AC422910027E43E /* UDStorageManager.swift in Sources */,
+				24773FCE2AC421AA0027E43E /* Injected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +464,7 @@
 		246000DF2A9E222B0032551E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY95NKW6BH;
@@ -428,6 +481,7 @@
 		246000E02A9E222B0032551E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY95NKW6BH;
