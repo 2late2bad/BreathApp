@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func startApp(window: UIWindow) {
-        let coordinatorFactory: CoordinatorFactoryProtocol = CoordinatorFactory(
-            authManager: AuthentificationManager.instance, moduleFactory: ModuleFactory()
+        let coordinatorFactory: CoordinatorFactory = CoordinatorFactoryImpl(
+            authManager: AuthentificationManager.instance, moduleFactory: ModuleFactoryImpl()
         )
         let appCoordinator = coordinatorFactory.createAppCoordinator(window: window)
         self.appCoordinator = appCoordinator

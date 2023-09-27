@@ -108,9 +108,11 @@ final class AuthController: UIViewController, FlowController {
                 if unlock {
                     enterButton.isEnabled = true
                     enterButton.alpha = 1
+                    enterButton.backgroundColor = .green
                 } else {
                     enterButton.isEnabled = false
                     enterButton.alpha = 0.7
+                    enterButton.backgroundColor = .gray
                 }
             }
             .store(in: &cancellables)

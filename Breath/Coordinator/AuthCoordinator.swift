@@ -12,10 +12,10 @@ final class AuthCoordinator: Coordinator {
 
     var rootViewController: UINavigationController
     private let authManager: Authentification
-    private let moduleFactory: ModuleFactoryProtocol
+    private let moduleFactory: ModuleFactory
     var flowCompletionHandler: CoordinatorHandler?
 
-    init(authManager: Authentification, moduleFactory: ModuleFactoryProtocol) {
+    init(authManager: Authentification, moduleFactory: ModuleFactory) {
         rootViewController = UINavigationController()
         self.authManager = authManager
         self.moduleFactory = moduleFactory

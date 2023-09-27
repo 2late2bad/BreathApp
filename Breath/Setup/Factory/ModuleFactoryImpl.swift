@@ -1,17 +1,19 @@
 //
-//  ModuleFactory.swift
+//  ModuleFactoryImpl.swift
 //  Breath
 //
 //  Created by Alexander V. on 16.09.2023.
 //
 
 import UIKit
+import Combine
+import OnboardSDK
 
-protocol ModuleFactoryProtocol {
-    func createAuthModule(authManager: Authentification) -> AuthController
-}
+final class ModuleFactoryImpl: ModuleFactory {
 
-final class ModuleFactory: ModuleFactoryProtocol {
+    func createOnboardingModule(hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardView {
+        OnboardView { hasSeenOnboarding.send(true) }
+    }
 
     func createAuthModule(authManager: Authentification) -> AuthController {
         let viewModel = AuthViewModel(authManager: authManager)

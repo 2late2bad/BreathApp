@@ -5,7 +5,7 @@
 //  Created by Alexander V. on 17.09.2023.
 //
 
-import UIKit
+import UIKit.UIScreen
 
 extension UIScreen {
 

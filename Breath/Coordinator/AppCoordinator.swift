@@ -7,52 +7,63 @@
 
 import UIKit
 import SwiftUI
+import Combine
+import Core
 
 final class AppCoordinator: Coordinator {
 
+    @Injected private var UDStorage: UDStorageManager
+
     private let window: UIWindow
+    private let hasSeenOnboarding = CurrentValueSubject<Bool, Never>(false)
+    private var subsriptions = Set<AnyCancellable>()
     private let authManager: Authentification
-    private let moduleFactory: ModuleFactoryProtocol
+    private let moduleFactory: ModuleFactory
     private var childCoordinators: [Coordinator]
-    weak var coordinatorFactory: CoordinatorFactoryProtocol?
+    let coordinatorFactory: CoordinatorFactory
     var flowCompletionHandler: CoordinatorHandler?
 
     init(window: UIWindow,
-         coordinatorFactory: CoordinatorFactoryProtocol?,
+         coordinatorFactory: CoordinatorFactory,
          authManager: Authentification,
-         moduleFactory: ModuleFactoryProtocol) {
+         moduleFactory: ModuleFactory) {
         self.window = window
+        window.makeKeyAndVisible()
         self.coordinatorFactory = coordinatorFactory
         self.authManager = authManager
         self.moduleFactory = moduleFactory
-        window.makeKeyAndVisible()
         childCoordinators = []
     }
 
     func start() {
-        let isFirstRun = false
+        setupOnboardingValue()
 
-        if isFirstRun {
-            // showOnboardingFlow()
-        } else if authManager.userSession == nil {
-            showAuthFlow()
-        } else {
-            showMainFlow()
-        }
+        hasSeenOnboarding
+            .removeDuplicates()
+            .sink { [weak self] isFirstLaunch in
+            guard let self else { return }
+            if !isFirstLaunch {
+                showOnboardingFlow()
+            } else if authManager.userSession == nil {
+                showAuthFlow()
+            } else {
+                showMainFlow()
+            }
+        }.store(in: &subsriptions)
     }
 }
 
 private extension AppCoordinator {
 
     func showOnboardingFlow() {
-        let onboardingCoordinator = OnboardingCoordinator()
+        let onboardingCoordinator = coordinatorFactory.createOnboardingCoordinator(hasSeenOnboarding: hasSeenOnboarding)
         onboardingCoordinator.start()
         childCoordinators.append(onboardingCoordinator)
         window.rootViewController = onboardingCoordinator.rootViewController
     }
 
     func showAuthFlow() {
-        let authCoordinator = coordinatorFactory!.createAuthCoordinator() // todo: Возможен ли здесь безопасный unwrap?
+        let authCoordinator = coordinatorFactory.createAuthCoordinator()
         authCoordinator.start()
         childCoordinators.append(authCoordinator)
         window.rootViewController = authCoordinator.rootViewController
@@ -63,9 +74,21 @@ private extension AppCoordinator {
     }
 
     func showMainFlow() {
-        let mainCoordinator = MainCoordinator()
+        let mainCoordinator = coordinatorFactory.createMainCoordinator()
         mainCoordinator.start()
         childCoordinators.append(mainCoordinator)
         self.window.rootViewController = mainCoordinator.rootViewController
+    }
+
+    func setupOnboardingValue() {
+        let value = UDStorage.bool(forKey: .firstRunApp)
+        hasSeenOnboarding.send(value ?? false)
+
+        hasSeenOnboarding
+            .filter { $0 }
+            .sink { [UDStorage] value in
+                UDStorage.set(value, forKey: .firstRunApp)
+            }
+            .store(in: &subsriptions)
     }
 }
