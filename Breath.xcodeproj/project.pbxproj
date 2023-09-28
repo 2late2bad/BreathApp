@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		240C1B512AB6F08E006EC9C4 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; };
-		240C1B522AB6F08E006EC9C4 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		240C1B552AB702B3006EC9C4 /* Authentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C1B542AB702B3006EC9C4 /* Authentification.swift */; };
 		240C1B572AB73F33006EC9C4 /* UIScreen+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C1B562AB73F33006EC9C4 /* UIScreen+Ext.swift */; };
 		241B34462AB5AA4700795EF6 /* ModuleFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B34452AB5AA4700795EF6 /* ModuleFactoryImpl.swift */; };
@@ -43,11 +41,13 @@
 		24773FE22AC42EA90027E43E /* UIComponentsFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FE12AC42EA90027E43E /* UIComponentsFramework.swift */; };
 		24773FEA2AC435EE0027E43E /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FE92AC435EE0027E43E /* CoordinatorFactory.swift */; };
 		24773FEC2AC4364B0027E43E /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FEB2AC4364B0027E43E /* ModuleFactory.swift */; };
+		2479B21C2AC5B9F5006C38A7 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; };
+		2479B21D2AC5B9F5006C38A7 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 247CA3792AA1F04200A3FF46 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2479B21E2AC5B9FC006C38A7 /* OnboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593542AA37EA7009F2A1D /* OnboardSDK.framework */; };
+		2479B21F2AC5B9FC006C38A7 /* OnboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593542AA37EA7009F2A1D /* OnboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		247A61332AB076910083585D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A61322AB076910083585D /* UIView+Ext.swift */; };
 		24959CCD2AA514D90089E580 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24959CCC2AA514D90089E580 /* AuthViewModel.swift */; };
 		24A2D4E62AB6299B00D301C2 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A2D4E52AB6299B00D301C2 /* AuthentificationManager.swift */; };
-		24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; };
-		24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F593102AA37D19009F2A1D /* OnboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +88,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				240C1B522AB6F08E006EC9C4 /* UIComponents.framework in Embed Frameworks */,
+				2479B21F2AC5B9FC006C38A7 /* OnboardSDK.framework in Embed Frameworks */,
 				2460B8772AB8AB7500E7071B /* Core.framework in Embed Frameworks */,
-				24F593122AA37D19009F2A1D /* OnboardSDK.framework in Embed Frameworks */,
+				2479B21D2AC5B9F5006C38A7 /* UIComponents.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,9 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2460B8762AB8AB7500E7071B /* Core.framework in Frameworks */,
-				240C1B512AB6F08E006EC9C4 /* UIComponents.framework in Frameworks */,
+				2479B21C2AC5B9F5006C38A7 /* UIComponents.framework in Frameworks */,
+				2479B21E2AC5B9FC006C38A7 /* OnboardSDK.framework in Frameworks */,
 				243FE4B52AA4CC09009EE76D /* FirebaseAuth in Frameworks */,
-				24F593112AA37D19009F2A1D /* OnboardSDK.framework in Frameworks */,
 				245D1B802AB614B1000F9E52 /* FirebaseStorage in Frameworks */,
 				245D1B7C2AB61481000F9E52 /* FirebaseFirestore in Frameworks */,
 				245D1B7E2AB61491000F9E52 /* FirebaseFirestoreSwift in Frameworks */,
@@ -390,7 +390,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				247472172AA3498D00E8D03B /* PBXTargetDependency */,
 			);
 			name = Breath;
 			packageProductDependencies = (
@@ -535,13 +534,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		247472172AA3498D00E8D03B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 247472162AA3498D00E8D03B /* SwiftLintPlugin */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2460FE602A9DFFE20032551E /* LaunchScreen.storyboard */ = {
@@ -789,11 +781,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 243FE4492AA4C649009EE76D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		247472162AA3498D00E8D03B /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 247472152AA3491800E8D03B /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

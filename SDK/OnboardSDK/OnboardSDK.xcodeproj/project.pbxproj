@@ -7,11 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24773FF22AC45EA80027E43E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FF12AC45EA80027E43E /* ContentView.swift */; };
+		24773FF72AC482840027E43E /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FF62AC482840027E43E /* OnboardModel.swift */; };
+		24773FFA2AC482E60027E43E /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24773FF92AC482E60027E43E /* OnboardViewModel.swift */; };
+		2479B2162AC5B758006C38A7 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2479B2152AC5B758006C38A7 /* UIComponents.framework */; };
+		2479B2172AC5B758006C38A7 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2479B2152AC5B758006C38A7 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2479B21A2AC5B7D9006C38A7 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2479B2192AC5B7D9006C38A7 /* Core.framework */; };
+		2479B21B2AC5B7D9006C38A7 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2479B2192AC5B7D9006C38A7 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2479B2212AC5D993006C38A7 /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2479B2202AC5D993006C38A7 /* PageControlView.swift */; };
+		2479B2232AC602E3006C38A7 /* InfoTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2479B2222AC602E3006C38A7 /* InfoTabBarView.swift */; };
+		2479B2252AC60346006C38A7 /* FooterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2479B2242AC60346006C38A7 /* FooterButtonView.swift */; };
+		2479B2272AC60454006C38A7 /* MainInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2479B2262AC60454006C38A7 /* MainInfoView.swift */; };
 		24F592F92AA37C74009F2A1D /* OnboardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F592F82AA37C74009F2A1D /* OnboardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24F5936F2AA38EF0009F2A1D /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5936E2AA38EF0009F2A1D /* OnboardView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2479B2182AC5B758006C38A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2479B2172AC5B758006C38A7 /* UIComponents.framework in Embed Frameworks */,
+				2479B21B2AC5B7D9006C38A7 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		24773FED2AC45D820027E43E /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24773FF12AC45EA80027E43E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24773FF62AC482840027E43E /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
+		24773FF92AC482E60027E43E /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		2479B2152AC5B758006C38A7 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2479B2192AC5B7D9006C38A7 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2479B2202AC5D993006C38A7 /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		2479B2222AC602E3006C38A7 /* InfoTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabBarView.swift; sourceTree = "<group>"; };
+		2479B2242AC60346006C38A7 /* FooterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButtonView.swift; sourceTree = "<group>"; };
+		2479B2262AC60454006C38A7 /* MainInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoView.swift; sourceTree = "<group>"; };
 		24F592F52AA37C74009F2A1D /* OnboardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnboardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F592F82AA37C74009F2A1D /* OnboardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardSDK.h; sourceTree = "<group>"; };
 		24F593062AA37C99009F2A1D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,12 +60,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2479B2162AC5B758006C38A7 /* UIComponents.framework in Frameworks */,
+				2479B21A2AC5B7D9006C38A7 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24773FF32AC46CF90027E43E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24773FF52AC46D2D0027E43E /* SubView */,
+				24F5936E2AA38EF0009F2A1D /* OnboardView.swift */,
+				24773FF12AC45EA80027E43E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24773FF42AC46CFF0027E43E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24773FF62AC482840027E43E /* OnboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24773FF52AC46D2D0027E43E /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				2479B2202AC5D993006C38A7 /* PageControlView.swift */,
+				2479B2222AC602E3006C38A7 /* InfoTabBarView.swift */,
+				2479B2262AC60454006C38A7 /* MainInfoView.swift */,
+				2479B2242AC60346006C38A7 /* FooterButtonView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		24773FF82AC482CE0027E43E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24773FF92AC482E60027E43E /* OnboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		24F592EB2AA37C74009F2A1D = {
 			isa = PBXGroup;
 			children = (
@@ -50,7 +125,9 @@
 		24F592F72AA37C74009F2A1D /* OnboardSDK */ = {
 			isa = PBXGroup;
 			children = (
-				24F5936E2AA38EF0009F2A1D /* OnboardView.swift */,
+				24773FF42AC46CFF0027E43E /* Model */,
+				24773FF32AC46CF90027E43E /* View */,
+				24773FF82AC482CE0027E43E /* ViewModel */,
 				24F592F82AA37C74009F2A1D /* OnboardSDK.h */,
 			);
 			path = OnboardSDK;
@@ -59,6 +136,9 @@
 		24F593052AA37C99009F2A1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2479B2192AC5B7D9006C38A7 /* Core.framework */,
+				2479B2152AC5B758006C38A7 /* UIComponents.framework */,
+				24773FED2AC45D820027E43E /* UIComponents.framework */,
 				24F5930A2AA37C9C009F2A1D /* UIComponents.framework */,
 				24F593062AA37C99009F2A1D /* Core.framework */,
 			);
@@ -87,6 +167,7 @@
 				24F592F12AA37C74009F2A1D /* Sources */,
 				24F592F22AA37C74009F2A1D /* Frameworks */,
 				24F592F32AA37C74009F2A1D /* Resources */,
+				2479B2182AC5B758006C38A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24773FF22AC45EA80027E43E /* ContentView.swift in Sources */,
+				2479B2272AC60454006C38A7 /* MainInfoView.swift in Sources */,
+				24773FF72AC482840027E43E /* OnboardModel.swift in Sources */,
+				2479B2252AC60346006C38A7 /* FooterButtonView.swift in Sources */,
+				2479B2232AC602E3006C38A7 /* InfoTabBarView.swift in Sources */,
+				24773FFA2AC482E60027E43E /* OnboardViewModel.swift in Sources */,
 				24F5936F2AA38EF0009F2A1D /* OnboardView.swift in Sources */,
+				2479B2212AC5D993006C38A7 /* PageControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
