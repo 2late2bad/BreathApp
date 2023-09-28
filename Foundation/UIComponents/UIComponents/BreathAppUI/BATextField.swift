@@ -68,8 +68,6 @@ public class BATextField: BaseTextField {
 
     // MARK: - Private methods
     override func setup() {
-        //delegate = self
-
         returnKeyType = .done
         autocorrectionType = .no
         autocapitalizationType = .none
@@ -98,7 +96,7 @@ public class BATextField: BaseTextField {
         attributedPlaceholder = NSAttributedString(
             string: placeholderText,
             attributes: [NSAttributedString.Key.foregroundColor:
-                        R.color.foregroundTextField() ?? .black.withAlphaComponent(0.3)]
+                        R.color.authForegroundTextField() ?? .black.withAlphaComponent(0.3)]
         )
         font = .systemFont(ofSize: fontSize, weight: .light)
 
@@ -112,12 +110,3 @@ public class BATextField: BaseTextField {
         eyeButton.setImage(UIImage(systemName: imageName), for: .normal)
     }
 }
-
-// MARK: - UITextFieldDelegate
-//extension BATextField: UITextFieldDelegate {
-//
-//    public func textFieldDidChangeSelection(_ textField: UITextField) {
-//        guard let text = textField.text else { return }
-//        eyeButton.isEnabled = !text.isEmpty
-//    }
-//}

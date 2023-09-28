@@ -25,7 +25,7 @@ public final class BAEyeButton: UIButton {
     // MARK: - Private methods
     private func setup() {
         setImage(UIImage(systemName: "eye.slash"), for: .normal)
-        tintColor = R.color.foregroundTextField()
+        tintColor = R.color.authForegroundTextField()
         widthAnchor.constraint(equalToConstant: 40).isActive = true
         isEnabled = false
     }

@@ -25,14 +25,6 @@ public final class AuthSwitchView: UIView {
     private var textLabel: String { isAuth ? "Нет аккаунта?" : "Есть аккаунт?"}
     private var buttonLabel: String { isAuth ? "Зарегистрироваться" : "Войти" }
 
-//    public override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupView()
-//        setupLabel()
-//        setupButton()
-//        layoutUI()
-//    }
-
     public init(isAuth: Bool) {
         self.isAuth = isAuth
         super.init(frame: .zero)
@@ -57,11 +49,10 @@ public extension AuthSwitchView {
 
     func test() {
         UIView.animate(withDuration: 0.2) {
-            self.backgroundColor = R.color.substrate()?.withAlphaComponent(0)
+            self.backgroundColor = R.color.authSubstrate()?.withAlphaComponent(0)
         } completion: { _ in
             UIView.animate(withDuration: 0.2) {
-
-                self.backgroundColor = R.color.substrate()?.withAlphaComponent(0.2)
+                self.backgroundColor = R.color.authSubstrate()?.withAlphaComponent(0.2)
             }
         }
     }
@@ -70,7 +61,7 @@ public extension AuthSwitchView {
 private extension AuthSwitchView {
 
     func setupView() {
-        backgroundColor = R.color.substrate()?.withAlphaComponent(0.2)
+        backgroundColor = R.color.authSubstrate()?.withAlphaComponent(0.2)
 
         layer.cornerRadius = 33
         layer.cornerCurve = .continuous
