@@ -22,15 +22,16 @@ final class CoordinatorFactoryImpl: CoordinatorFactory {
         AppCoordinator(window: window, coordinatorFactory: self, authManager: authManager, moduleFactory: moduleFactory)
     }
 
-    func createOnboardingCoordinator(hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardingCoordinator {
-        OnboardingCoordinator(hasSeenOnboarding: hasSeenOnboarding, moduleFactory: moduleFactory)
+    func createOnboardingCoordinator(presenter: Router,
+                                     hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardingCoordinator {
+        OnboardingCoordinator(presenter: presenter, hasSeenOnboarding: hasSeenOnboarding, moduleFactory: moduleFactory)
     }
 
-    func createAuthCoordinator() -> AuthCoordinator {
-        AuthCoordinator(authManager: authManager, moduleFactory: moduleFactory)
+    func createAuthCoordinator(presenter: Router) -> AuthCoordinator {
+        AuthCoordinator(presenter: presenter, authManager: authManager, moduleFactory: moduleFactory)
     }
 
-    func createMainCoordinator() -> MainCoordinator {
-        MainCoordinator()
+    func createMainCoordinator(presenter: Router) -> MainCoordinator {
+        MainCoordinator(presenter: presenter)
     }
 }

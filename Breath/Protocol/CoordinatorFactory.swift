@@ -12,7 +12,8 @@ protocol CoordinatorFactory: AnyObject {
     var authManager: Authentification { get }
     var moduleFactory: ModuleFactory { get }
     func createAppCoordinator(window: UIWindow) -> AppCoordinator
-    func createOnboardingCoordinator(hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardingCoordinator
-    func createAuthCoordinator() -> AuthCoordinator
-    func createMainCoordinator() -> MainCoordinator
+    func createOnboardingCoordinator(presenter: Router,
+                                     hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardingCoordinator
+    func createAuthCoordinator(presenter: Router) -> AuthCoordinator
+    func createMainCoordinator(presenter: Router) -> MainCoordinator
 }
