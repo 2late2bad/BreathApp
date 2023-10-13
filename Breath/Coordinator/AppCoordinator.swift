@@ -15,27 +15,30 @@ final class AppCoordinator: Coordinator {
     @Injected private var UDStorage: UDStorageManager
 
     private let window: UIWindow
+    private let rootViewController: UINavigationController
+    private let appRouter: AppRouter
     private let hasSeenOnboarding = CurrentValueSubject<Bool, Never>(false)
     private var subsriptions = Set<AnyCancellable>()
     private let authManager: Authentification
-    private let moduleFactory: ModuleFactory
     private var childCoordinators: [Coordinator]
     let coordinatorFactory: CoordinatorFactory
     var flowCompletionHandler: CoordinatorHandler?
 
     init(window: UIWindow,
          coordinatorFactory: CoordinatorFactory,
-         authManager: Authentification,
-         moduleFactory: ModuleFactory) {
+         authManager: Authentification) {
         self.window = window
-        window.makeKeyAndVisible()
+        rootViewController = UINavigationController()
+        rootViewController.isNavigationBarHidden = true
+        appRouter = AppRouter(navigationController: rootViewController)
         self.coordinatorFactory = coordinatorFactory
         self.authManager = authManager
-        self.moduleFactory = moduleFactory
         childCoordinators = []
     }
 
     func start() {
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
         setupOnboardingValue()
 
         hasSeenOnboarding
@@ -56,17 +59,16 @@ final class AppCoordinator: Coordinator {
 private extension AppCoordinator {
 
     func showOnboardingFlow() {
-        let onboardingCoordinator = coordinatorFactory.createOnboardingCoordinator(hasSeenOnboarding: hasSeenOnboarding)
+        let onboardingCoordinator = coordinatorFactory.createOnboardingCoordinator(router: appRouter,
+                                                                                   hasSeenOnboarding: hasSeenOnboarding)
         onboardingCoordinator.start()
         childCoordinators.append(onboardingCoordinator)
-        window.rootViewController = onboardingCoordinator.rootViewController
     }
 
     func showAuthFlow() {
-        let authCoordinator = coordinatorFactory.createAuthCoordinator()
+        let authCoordinator = coordinatorFactory.createAuthCoordinator(router: appRouter)
         authCoordinator.start()
         childCoordinators.append(authCoordinator)
-        window.rootViewController = authCoordinator.rootViewController
         authCoordinator.flowCompletionHandler = { [weak self] in
             guard let self else { return }
             self.showMainFlow()
@@ -74,10 +76,9 @@ private extension AppCoordinator {
     }
 
     func showMainFlow() {
-        let mainCoordinator = coordinatorFactory.createMainCoordinator()
+        let mainCoordinator = coordinatorFactory.createMainCoordinator(router: appRouter)
         mainCoordinator.start()
         childCoordinators.append(mainCoordinator)
-        self.window.rootViewController = mainCoordinator.rootViewController
     }
 
     func setupOnboardingValue() {

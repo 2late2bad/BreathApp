@@ -10,13 +10,13 @@ import SwiftUI
 
 final class AuthCoordinator: Coordinator {
 
-    var rootViewController: UINavigationController
+    private let router: Router
     private let authManager: Authentification
     private let moduleFactory: ModuleFactory
     var flowCompletionHandler: CoordinatorHandler?
 
-    init(authManager: Authentification, moduleFactory: ModuleFactory) {
-        rootViewController = UINavigationController()
+    init(router: Router, authManager: Authentification, moduleFactory: ModuleFactory) {
+        self.router = router
         self.authManager = authManager
         self.moduleFactory = moduleFactory
     }
@@ -31,6 +31,6 @@ final class AuthCoordinator: Coordinator {
             guard let self else { return }
             self.flowCompletionHandler?()
         }
-        rootViewController.setViewControllers([controller], animated: false)
+        router.push(controller, animated: true, completion: nil)
     }
 }

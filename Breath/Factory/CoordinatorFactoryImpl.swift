@@ -19,19 +19,19 @@ final class CoordinatorFactoryImpl: CoordinatorFactory {
     }
 
     func createAppCoordinator(window: UIWindow) -> AppCoordinator {
-        AppCoordinator(window: window, coordinatorFactory: self, authManager: authManager, moduleFactory: moduleFactory)
+        AppCoordinator(window: window, coordinatorFactory: self, authManager: authManager)
     }
 
-    func createOnboardingCoordinator(presenter: Router,
+    func createOnboardingCoordinator(router: Router,
                                      hasSeenOnboarding: CurrentValueSubject<Bool, Never>) -> OnboardingCoordinator {
-        OnboardingCoordinator(presenter: presenter, hasSeenOnboarding: hasSeenOnboarding, moduleFactory: moduleFactory)
+        OnboardingCoordinator(router: router, hasSeenOnboarding: hasSeenOnboarding, moduleFactory: moduleFactory)
     }
 
-    func createAuthCoordinator(presenter: Router) -> AuthCoordinator {
-        AuthCoordinator(presenter: presenter, authManager: authManager, moduleFactory: moduleFactory)
+    func createAuthCoordinator(router: Router) -> AuthCoordinator {
+        AuthCoordinator(router: router, authManager: authManager, moduleFactory: moduleFactory)
     }
 
-    func createMainCoordinator(presenter: Router) -> MainCoordinator {
-        MainCoordinator(presenter: presenter)
+    func createMainCoordinator(router: Router) -> MainCoordinator {
+        MainCoordinator(router: router)
     }
 }

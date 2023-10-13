@@ -9,15 +9,19 @@ import UIKit
 
 final class MainCoordinator: Coordinator {
 
+    private let router: Router
     var rootViewController: UITabBarController
     var childCoordinators: [Coordinator]
     var flowCompletionHandler: CoordinatorHandler?
 
-    init() {
+    init(router: Router) {
+        self.router = router
         childCoordinators = []
         rootViewController = UITabBarController()
         rootViewController.tabBar.isTranslucent = true
         rootViewController.tabBar.backgroundColor = .lightGray
+        rootViewController.modalPresentationStyle = .fullScreen
+        rootViewController.modalTransitionStyle = .flipHorizontal
     }
 
     func start() {
@@ -48,6 +52,12 @@ final class MainCoordinator: Coordinator {
         self.rootViewController.viewControllers = [
             homeViewController, healthViewController, airViewController, mapViewController
         ]
+
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            // router.present(rootViewController, animated: !router.viewControllers.isEmpty)
+            router.present(rootViewController, animated: true)
+        }
     }
 
     func setup(controller: UIViewController, title: String, imageName: String, selectedImageName: String) {
